@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;  
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        body{
+            background-image: url('imagens/fundo-madeira.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        main{
+            position: relative;
+            height: 100vh;
+        }
+        section#telefone{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 311px;
+            height: 627px;
+            background-image: url('imagens/frame-iphone.png');
+        }
+        iframe#tela{
+            position: relative;
+            left: 21px;
+            top: 79px;
+            width: 269px;
+            height: 475px;
+            border-radius: 5px;
+        }
+        section#redes-sociais{
+            text-align: right;
+        }
+        section#redes-sociais img{
+            width: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+        }
+        section#redes-sociais img:hover{
+            border: 2px solid white;
+            transform: translate(-3px, -3px);
+            box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.600);
+            transition: 1s, border 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="telefone">
+            <iframe src="home.html" frameborder="0" id="tela" name="tela"></iframe>
+        </section>
+        <section id="redes-sociais">
+            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt=""></a><br>
+            <a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt=""></a><br>
+            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt=""></a><br>
+            <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt=""></a><br>
+            <a href="twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt=""></a><br>
+            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt=""></a><br>                 
+        </section>
+    </main>
+</body> 
+</html>
